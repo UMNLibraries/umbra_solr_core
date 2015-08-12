@@ -115,6 +115,14 @@
          subject_ssi^2000
          subject_stemmed^1000
        </str>
+       <str name="data_provider_qf">
+         dataProvider_ssi^1000
+         dataProvider_tei^500
+       </str>
+       <str name="data_provider_pf">
+         dataProvider_ssi^1000
+         dataProvider_tei^500
+       </str>
 
        <str name="fl">
          *, score
