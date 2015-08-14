@@ -62,7 +62,7 @@
          title_ssi^100000
          title_stemmed^25000
          subject_ssim^1000
-         subject__stemmed^500
+         subject_stemmed^500
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
@@ -78,7 +78,7 @@
          title_ssi^100000
          title_stemmed^25000
          subject_ssim^1000
-         subject__stemmed^500
+         subject_stemmed^500
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
