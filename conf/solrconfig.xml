@@ -133,10 +133,10 @@
        <str name="facet.field">object_type_si</str>
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>
-       <str name="spellcheck.onlyMorePopular">true</str>
+       <str name="spellcheck.onlyMorePopular">false</str>
        <str name="spellcheck.extendedResults">true</str>
        <str name="spellcheck.collate">false</str>
-       <str name="spellcheck.count">5</str>
+       <str name="spellcheck.count">1</str>
 
      </lst>
     <arr name="last-components">
