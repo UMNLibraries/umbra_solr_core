@@ -165,6 +165,11 @@
     <copyField source="title_ssi" dest="title_stemmed"/>
     <copyField source="subject_ssim" dest="subject_stemmed"/>
     <copyField source="creator_ssim" dest="creator_stemmed"/>
+    
+    <field name="spell" type="string" stored="true" indexed="true" multiValued="true"/>
+    <copyField source="title_ssi" dest="spell"/>
+    <copyField source="subject_ssim" dest="spell"/>
+    <copyField source="creator_ssim" dest="spell"/>
 
 </fields>
 
