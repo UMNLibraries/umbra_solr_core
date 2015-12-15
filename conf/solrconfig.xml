@@ -201,4 +201,25 @@
     <defaultQuery>search</defaultQuery>
   </admin>
   
+<searchComponent name="suggest" class="solr.SuggestComponent">
+    <lst name="suggester">
+      <str name="name">search_suggest</str>
+      <str name="lookupImpl">FuzzyLookupFactory</str>
+      <str name="suggestAnalyzerFieldType">textSuggest</str>
+      <str name="buildOnCommit">false</str>
+      <str name="field">search_suggest</str>
+    </lst>
+  </searchComponent>
+
+  <requestHandler name="/suggest" class="solr.SearchHandler" startup="lazy">
+    <lst name="defaults">
+      <str name="suggest">true</str>
+      <str name="suggest.count">10</str>
+      <str name="suggest.dictionary">search_suggest</str>
+    </lst>
+    <arr name="components">
+      <str>suggest</str>
+    </arr>
+  </requestHandler>
+  
 </config>
