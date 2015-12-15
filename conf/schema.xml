@@ -170,6 +170,14 @@
     <copyField source="title_ssi" dest="spell"/>
     <copyField source="subject_ssim" dest="spell"/>
     <copyField source="creator_ssim" dest="spell"/>
+    
+    <dynamicField name="*_suggest" type="textSuggest" indexed="true" stored="false" multiValued="true" />
+    <copyField source="title_ssi" dest="search_suggest"/>
+    <copyField source="subject_ssim" dest="search_suggest"/>
+    <copyField source="creator_ssim" dest="search_suggest"/>
+    <copyField source="sourceResource_contributor_ssi" dest="search_suggest"/>
+    <copyField source="dataProvider_ssi" dest="search_suggest"/>
+    <copyField source="sourceResource_collection_title_ssi" dest="search_suggest"/>
 
 </fields>
 
