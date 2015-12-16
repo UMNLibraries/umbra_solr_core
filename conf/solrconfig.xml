@@ -66,9 +66,11 @@
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
+         collection_title_stemmed^25
          sourceResource_description_tesi
          sourceResource_collection_description_tesi
-         dataProvider_ssi
+         dataProvider_ssi^50
+         dataProvider_stemmed^25
          tags_ssim
          import_job_name_ssi
          import_job_id_isi
@@ -82,9 +84,11 @@
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
+         collection_title_stemmed^25
          sourceResource_description_tesi
          sourceResource_collection_description_tesi
-         dataProvider_ssi
+         dataProvider_ssi^50
+         dataProvider_stemmed^25
          tags_ssim
          import_job_name_ssi
          import_job_id_isi
