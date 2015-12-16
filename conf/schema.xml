@@ -162,9 +162,13 @@
     <field name="title_stemmed" type="text_en" stored="false" indexed="true" multiValued="false"/>
     <field name="subject_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="creator_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
+    <field name="dataProvider_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
+    <field name="collection_title_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <copyField source="title_ssi" dest="title_stemmed"/>
     <copyField source="subject_ssim" dest="subject_stemmed"/>
     <copyField source="creator_ssim" dest="creator_stemmed"/>
+    <copyField source="dataProvider_ssi" dest="dataProvider_stemmed"/>
+    <copyField source="sourceResource_collection_title_ssi" dest="collection_title_stemmed"/>    
     
     <field name="spell" type="string" stored="true" indexed="true" multiValued="true"/>
     <copyField source="title_ssi" dest="spell"/>
