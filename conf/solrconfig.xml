@@ -67,10 +67,10 @@
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
          collection_title_stemmed^25
-         sourceResource_description_tesi
-         sourceResource_collection_description_tesi
          dataProvider_ssi^50
          dataProvider_stemmed^25
+         sourceResource_description_tesi
+         sourceResource_collection_description_tesi
          tags_ssim
          import_job_name_ssi
          import_job_id_isi
@@ -85,10 +85,10 @@
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
          collection_title_stemmed^25
-         sourceResource_description_tesi
-         sourceResource_collection_description_tesi
          dataProvider_ssi^50
          dataProvider_stemmed^25
+         sourceResource_description_tesi
+         sourceResource_collection_description_tesi
          tags_ssim
          import_job_name_ssi
          import_job_id_isi
@@ -118,12 +118,12 @@
 
        <str name="data_provider_qf">
          dataProvider_ssi^1000
-         dataProvider_tei^500
+         dataProvider_stemmed^500
        </str>
 
        <str name="data_provider_pf">
          dataProvider_ssi^1000
-         dataProvider_tei^500
+         dataProvider_stemmed^500
        </str>
 
        <str name="fl">
@@ -205,6 +205,7 @@
     <defaultQuery>search</defaultQuery>
   </admin>
   
+
 <searchComponent name="suggest" class="solr.SuggestComponent">
     <lst name="suggester">
       <str name="name">search_suggest</str>
