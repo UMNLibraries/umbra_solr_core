@@ -160,24 +160,24 @@
     <!-- you must define copyField source and dest fields explicity or schemaBrowser doesn't work -->
     <field name="all_text_timv" type="text" stored="false" indexed="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
     <field name="title_stemmed" type="text_en" stored="false" indexed="true" multiValued="false"/>
-    <field name="subject_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
+    <field name="keywords_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="creator_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="dataProvider_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="collection_title_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <copyField source="title_ssi" dest="title_stemmed"/>
-    <copyField source="subject_ssim" dest="subject_stemmed"/>
+    <copyField source="keywords_ssim" dest="keywords_stemmed"/>
     <copyField source="creator_ssim" dest="creator_stemmed"/>
     <copyField source="dataProvider_ssi" dest="dataProvider_stemmed"/>
     <copyField source="sourceResource_collection_title_ssi" dest="collection_title_stemmed"/>    
     
     <field name="spell" type="text" stored="true" indexed="true" multiValued="true"/>
     <copyField source="title_ssi" dest="spell"/>
-    <copyField source="subject_ssim" dest="spell"/>
+    <copyField source="keywords_ssim" dest="spell"/>
     <copyField source="creator_ssim" dest="spell"/>
     
     <dynamicField name="*_suggest" type="textSuggest" indexed="true" stored="false" multiValued="true" />
     <copyField source="title_ssi" dest="search_suggest"/>
-    <copyField source="subject_ssim" dest="search_suggest"/>
+    <copyField source="keywords_ssim" dest="search_suggest"/>
     <copyField source="creator_ssim" dest="search_suggest"/>
     <copyField source="sourceResource_contributor_ssi" dest="search_suggest"/>
     <copyField source="dataProvider_ssi" dest="search_suggest"/>
