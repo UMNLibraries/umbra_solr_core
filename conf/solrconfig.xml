@@ -61,8 +61,8 @@
          id
          title_ssi^100000
          title_stemmed^25000
-         subject_ssim^1000
-         subject_stemmed^500
+         keywords_ssim^1000
+         keywords_stemmed^500
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
@@ -79,8 +79,8 @@
          id
          title_ssi^100000
          title_stemmed^25000
-         subject_ssim^1000
-         subject_stemmed^500
+         keywords_ssim^1000
+         keywords_stemmed^500
          creator_ssi^250
          creator_stemmed^50
          sourceResource_collection_title_ssi^50
@@ -109,11 +109,11 @@
          title_ssi^500000
          title_stemmed^50000
        </str>
-       <str name="subject_qf">
-         subject_stemmed^1000
+       <str name="keywords_qf">
+         keywords_stemmed^1000
        </str>
-       <str name="subject_pf">
-         subject_stemmed^1000
+       <str name="keywords_pf">
+         keywords_stemmed^1000
        </str>
 
        <str name="data_provider_qf">
