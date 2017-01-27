@@ -626,7 +626,7 @@
     <field name="creator_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="dataProvider_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="collection_title_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>    
-    <dynamicField name="*_suggest" type="textSuggest" indexed="true" stored="false" multiValued="true" />
+    <dynamicField name="*_suggest" type="textSuggest" indexed="true" stored="true" multiValued="true" />
 
  </fields>
 
