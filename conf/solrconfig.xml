@@ -271,13 +271,13 @@
       -->
   </searchComponent>
 
-  <searchComponent name="suggest" class="solr.SuggestComponent">
+<searchComponent name="suggest" class="solr.SuggestComponent">
     <lst name="suggester">
       <str name="name">search_suggest</str>
-      <str name="lookupImpl">FuzzyLookupFactory</str>      <!-- org.apache.solr.spelling.suggest.fst -->
+      <str name="lookupImpl">FreeTextLookupFactory</str>
       <str name="dictionaryImpl">DocumentDictionaryFactory</str>     <!-- org.apache.solr.spelling.suggest.HighFrequencyDictionaryFactory -->
+      <str name="suggestFreeTextAnalyzerFieldType">textSuggest</str>
       <str name="field">search_suggest</str>
-      <str name="suggestAnalyzerFieldType">textSuggest</str>
     </lst>
   </searchComponent>
 
