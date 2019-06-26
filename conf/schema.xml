@@ -146,7 +146,7 @@
          purposes.  The ordering is generated based on the field name
          and the version of the index, As long as the index version
          remains unchanged, and the same field name is reused,
-         the ordering of the docs will be consistent. 
+         the ordering of the docs will be consistent.
          If you want different psuedo-random orderings of documents,
          for the same version of the index, use a dynamicField and
          change the name
@@ -354,10 +354,10 @@
              matching a pattern with an arbitrary replacement string,
              which may include back references to portions of the original
              string matched by the pattern.
-            
+
              See the Java Regular Expression documentation for more
              information on pattern and replacement string syntax.
-            
+
              http://java.sun.com/j2se/1.5.0/docs/api/java/util/regex/package-summary.html
           -->
         <filter class="solr.PatternReplaceFilterFactory"
@@ -365,7 +365,7 @@
         />
       </analyzer>
     </fieldType>
-   
+
     <fieldtype name="phonetic" stored="false" indexed="true" class="solr.TextField" >
       <analyzer>
         <tokenizer class="solr.StandardTokenizerFactory"/>
@@ -449,7 +449,7 @@
        given field.
        When using MoreLikeThis, fields used for similarity should be
        stored for best performance.
-     termPositions: Store position information with the term vector. 
+     termPositions: Store position information with the term vector.
        This will increase storage costs.
      termOffsets: Store offset information with the term vector. This
        will increase storage costs.
@@ -625,7 +625,7 @@
     <field name="keywords_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="creator_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <field name="dataProvider_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
-    <field name="collection_title_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>    
+    <field name="collection_title_stemmed" type="text_en" stored="false" indexed="true" multiValued="true"/>
     <dynamicField name="*_suggest" type="textSuggest" indexed="true" stored="true" multiValued="true" />
 
  </fields>
@@ -646,7 +646,7 @@
     <copyField source="keywords_ssim" dest="keywords_stemmed"/>
     <copyField source="creator_ssim" dest="creator_stemmed"/>
     <copyField source="dataProvider_ssi" dest="dataProvider_stemmed"/>
-    <copyField source="sourceResource_collection_title_ssi" dest="collection_title_stemmed"/>    
+    <copyField source="sourceResource_collection_title_ssi" dest="collection_title_stemmed"/>
     <copyField source="title_ssi" dest="spell"/>
     <copyField source="keywords_ssim" dest="spell"/>
     <copyField source="creator_ssim" dest="spell"/>

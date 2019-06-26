@@ -64,7 +64,7 @@
        of SearchComponents (see below) and supports distributed
        queries across multiple shards
     -->
-  <requestHandler name="search_hub" class="solr.SearchHandler" default="true">
+  <requestHandler name="umbra_search" class="solr.SearchHandler" default="true">
       <!-- default values for query parameters can be specified, these
          will be overridden by parameters in the request
       -->
@@ -159,8 +159,6 @@
        <str name="facet">true</str>
        <str name="facet.mincount">1</str>
        <str name="facet.limit">10</str>
-       <str name="facet.field">active_fedora_model_ssi</str>
-       <str name="facet.field">object_type_si</str>
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>
        <str name="spellcheck.onlyMorePopular">false</str>
@@ -244,45 +242,6 @@
       <str name="accuracy">0.7</str>
       <str name="buildOnOptimize">true</str>
     </lst>
-
-    <!-- a spellchecker that uses a different distance measure -->
-    <!--
-       <lst name="spellchecker">
-         <str name="name">jarowinkler</str>
-         <str name="field">spell</str>
-         <str name="distanceMeasure">
-           org.apache.lucene.search.spell.JaroWinklerDistance
-         </str>
-         <str name="spellcheckIndexDir">spellcheckerJaro</str>
-       </lst>
-     -->
-
-    <!-- a spellchecker that use an alternate comparator
-
-         comparatorClass be one of:
-          1. score (default)
-          2. freq (Frequency first, then score)
-          3. A fully qualified class name
-      -->
-    <!--
-       <lst name="spellchecker">
-         <str name="name">freq</str>
-         <str name="field">lowerfilt</str>
-         <str name="spellcheckIndexDir">spellcheckerFreq</str>
-         <str name="comparatorClass">freq</str>
-         <str name="buildOnCommit">true</str>
-      -->
-
-    <!-- A spellchecker that reads the list of words from a file -->
-    <!--
-       <lst name="spellchecker">
-         <str name="classname">solr.FileBasedSpellChecker</str>
-         <str name="name">file</str>
-         <str name="sourceLocation">spellings.txt</str>
-         <str name="characterEncoding">UTF-8</str>
-         <str name="spellcheckIndexDir">spellcheckerFile</str>
-       </lst>
-      -->
   </searchComponent>
 
 <searchComponent name="suggest" class="solr.SuggestComponent">
