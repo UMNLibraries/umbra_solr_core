@@ -156,6 +156,14 @@
          g*, score
        </str>
 
+       <str name="df">
+         text
+       </str>
+
+       <str name="q.op">
+          OR
+       </str>
+      
        <str name="facet">true</str>
        <str name="facet.mincount">1</str>
        <str name="facet.limit">10</str>
